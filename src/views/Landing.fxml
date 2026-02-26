@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.LandingController">
+    <children>
+        <VBox alignment="CENTER" layoutX="150.0" layoutY="60.0" prefHeight="280.0" prefWidth="300.0" spacing="30.0">
+            <children>
+                <Label styleClass="title-label" text="SocialMedia App" />
+                <Button mnemonicParsing="false" onAction="#goToLogin" prefHeight="50.0" prefWidth="200.0" text="Login" />
+                <Button mnemonicParsing="false" onAction="#goToRegister" prefHeight="50.0" prefWidth="200.0" text="Create Account" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

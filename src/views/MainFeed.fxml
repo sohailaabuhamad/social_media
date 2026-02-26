@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.MainFeedController">
+    <left>
+        <VBox spacing="15.0" style="-fx-background-color: #2f3542; -fx-padding: 20;">
+            <children>
+                <Label styleClass="title-label" text="Menu" style="-fx-font-size: 18;" />
+                <Button maxWidth="Infinity" text="🏠 Home" styleClass="button" />
+                <Button maxWidth="Infinity" text="👤 Profile" styleClass="button" />
+                <Region VBox.vgrow="ALWAYS" />
+                <Button onAction="#handleLogout" maxWidth="Infinity" text="🚪 Logout" style="-fx-background-color: #ff4757;" />
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="20.0" style="-fx-padding: 20; -fx-background-color: #1e272e;">
+            <children>
+                <Label fx:id="welcomeLabel" styleClass="title-label" text="Welcome to your feed!" />
+
+                <HBox spacing="10.0">
+                    <TextField fx:id="postInput" promptText="What's on your mind?" HBox.hgrow="ALWAYS" />
+                    <Button text="Post" onAction="#handlePost" />
+                </HBox>
+
+                <Separator />
+
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background: transparent;">
+                    <VBox fx:id="postContainer" spacing="10.0">
+                        <Label text="No posts yet... start the conversation!" textFill="GRAY" />
+                    </VBox>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

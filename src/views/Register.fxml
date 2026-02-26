@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.RegisterController">
+    <children>
+        <VBox alignment="CENTER" layoutX="150.0" layoutY="30.0" prefHeight="340.0" prefWidth="300.0" spacing="20.0">
+            <children>
+                <Label styleClass="title-label" text="Create Account" />
+                <TextField fx:id="nameField" promptText="Enter your Name" />
+                <TextField fx:id="emailField" promptText="Enter your Email" />
+                <PasswordField fx:id="passwordField" promptText="Enter your Password" />
+                <Button mnemonicParsing="false" onAction="#handleRegister" prefHeight="40.0" prefWidth="200.0" text="Register" />
+                <Button mnemonicParsing="false" onAction="#goToLanding" prefHeight="30.0" prefWidth="150.0" text="Back" style="-fx-background-color: transparent; -fx-text-fill: #d2dae2; -fx-border-color: #d2dae2; -fx-border-radius: 20;" />
+                <Label fx:id="messageLabel" textFill="WHITE" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

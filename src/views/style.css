@@ -1,0 +1,44 @@
+/* Make the whole background a sleek dark gray/blue */
+.root {
+    -fx-background-color: #1e272e;
+}
+
+/* Style the big Create Account title */
+.title-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+/* Style all text and password boxes */
+.text-field, .password-field {
+    -fx-background-color: #485460;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #d2dae2;
+    -fx-background-radius: 8;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+}
+
+/* Make the boxes glow blue when the user clicks inside them! */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #0fbcf9;
+    -fx-border-radius: 8;
+    -fx-border-width: 2px;
+}
+
+/* Style the Register button to be a cool cyan with rounded pill edges */
+.button {
+    -fx-background-color: #0fbcf9;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25; /* Makes it a pill shape */
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+/* Make the button slightly darker when the mouse hovers over it */
+.button:hover {
+    -fx-background-color: #0097e6;
+}
